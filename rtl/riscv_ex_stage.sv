@@ -590,6 +590,7 @@ module riscv_ex_stage
             .clk_i          ( fpu_clk                               ),
             .rst_ni         ( rst_n                                 ),
             .hart_id_i      ( hart_id_i                             ),
+            .redundancy_enable_i( 1'b1                              ),
             .operands_i     ( apu_operands_i                        ),
             .rnd_mode_i     ( fpnew_pkg::roundmode_e'(fp_rnd_mode)  ),
             .op_i           ( fpnew_pkg::operation_e'(fpu_op)       ),
